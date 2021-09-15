@@ -1,19 +1,31 @@
 <Information>
 	<Information ID="1">
 		<Name>John Doe</Name>
-		<Address>H# 38, R#3, Banani, Dhaka</Address>
+		<Address>
+			<House>H# 38, R#3</House>
+			<Area> Banani</Area>
+			<City>Dhaka</City>
+		</Address>
 		<Department>Sales</Department>
 		<Salary>20000</Salary>	
 	</Information>
 	<Information ID="2">
 		<Name>Mark Zuckerberg</Name>
-		<Address>Flat# A/1, H# 20, R#18, Mirpur, Dhaka</Address>
+		<Address>
+			<House>Flat# A/1, H# 20</House>
+			<Area>R#18, Mirpur</Area>
+			<City>Dhaka</City>
+		</Address>
 		<Department>Accountss</Department>
 		<Salary>12000</Salary>	
 	</Information>
 	<Information ID="3">
 		<Name>Ala Voski</Name>
-		<Address>H# 38, R#3, Motijheel</Address>
+		<Address>
+			<House>H# 38, R#3</House>
+			<Area>Motijheel</Area>
+			<City></City>
+		</Address>
 		<Department>Human Resource</Department>
 		<Salary>30000</Salary>	
 	</Information>

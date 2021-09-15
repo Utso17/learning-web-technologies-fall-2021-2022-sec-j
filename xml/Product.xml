@@ -4,7 +4,7 @@
 		<UnitPrice>35000</UnitPrice>
 		<stock>50</stock>
 		<status>1</status>
-	</Product>
+	</Product>s
 	<Product id="20">
 		<name> HTC </name>
 		<UnitPrice>65300</UnitPrice>
