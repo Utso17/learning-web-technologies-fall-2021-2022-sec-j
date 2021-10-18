@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+<fieldset>
+
+    <legend><b>REGISTRATION</b></legend>
+    <div>
+
+      <label>Id </label><br>
+      <input type="number" id="nember" name="id" ><br>
+      
+      <label>Password</label><br>
+      <input type="password" id="password" name="password" ><br>
+      
+      <label>Confirm Password </label><br>
+      <input type="password" id="cpassword" name="cpassword" ><br>
+      
+      <label>Name</label><br>
+      <input type="text" id="name" name="name" ><br>
+      
+    </div>
+
+    <label>User Type </label>
+    <hr>
+    <input type="radio" name="User" value="User">
+    <label class="User">User</label>
+    <input type="radio" name="User" value="Admin">
+    <label class="Admin">Admin</label>  
+    <br>
+    </div>
+
+
+</div>
+
+
+
+    <input type="submit" value="Sign Up">
+    <a href="">Sign Up</a>
+    
+    
+</form>
+
+<?php
+   if ($_SERVER["REQUEST_METHOD"] == "POST") 
+   {
+     if(isset($_POST['submit']))
+       {
+           $name = $_POST['Id'];
+           $pword = $_POST['password'];
+           $conpword = $_POST['cpassword'];
+           $uname = $_POST['name'];
+           $gender = $_POST['User'];
+           
+           if(empty($Id))
+           {
+               echo "Id is empty ";         
+           }
+           if($password != $cpassword)
+           {
+               echo "Your password doesn't match ";       
+           }
+           if(empty($name))
+           {
+               echo "Name is empty ";        
+           }
+           
+           else 
+           {
+               echo "Id: $Id, Name : $name, You are : $User, ";
+           }
+       }
+   }
+?>
+
+</body>
+
+</html>
