@@ -51,3 +51,35 @@
 				<input type="reset" name="" value="Reset"></td>
 		</tr>
 	</table>
+
+	<script>
+		"use strict"
+			function getName(){
+			let name = document.getElementById('name').value;
+			if(name != ''){
+				
+				getemail();
+				checkButton();
+				
+				alert('done');
+				
+			}else{
+				alert('null value');
+			}
+			
+		}
+		function getemail(){
+			let email = document.getElementById('email').value;
+			if(email != ''){
+				
+				
+				
+			}else{
+				alert('null value');
+			}
+			
+		}
+
+		</script>
+</body>
+</html>
